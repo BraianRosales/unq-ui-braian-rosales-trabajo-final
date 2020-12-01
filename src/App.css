@@ -1,32 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,200&family=Roboto+Mono:ital,wght@1,300&family=Sansita+Swashed:wght@700&family=Shadows+Into+Light&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Covered+By+Your+Grace&family=Elsie+Swash+Caps&family=Handlee&family=Raleway:ital,wght@0,300;1,200&family=Roboto+Mono:ital,wght@1,300&family=Sansita+Swashed:wght@700&family=Shadows+Into+Light&family=Work+Sans:ital@1&family=Yeon+Sung&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Handlee&family=Raleway:ital,wght@0,300;1,200&family=Roboto+Mono:ital,wght@1,300&family=Sansita+Swashed:wght@700&family=Shadows+Into+Light&family=Work+Sans:ital@1&display=swap');
+
 .opciones{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   padding: 30px;
+  
 }
 
 .comienzo{
   font-size : 22px;
   padding: 25px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  font-size: 28px;
+  color: #ffffff;
 }
 
 .opcion{
-  font-size : 30px;
+  font-size : 35px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 1px solid black;
   border-radius: 100%;
   padding: 70px;
   cursor: pointer;
   margin: 25px;
+  color: #24272e;
+  background: #e47063;
 }
 
-.titulo{
+.opcion:hover{
+  background: rgb(202, 189, 88);
+}
+
+header{
   text-align: center;
+  background: #e47063;
+  padding: 10px;
+  color: #ffffff;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 18px;
+}
+
+body{
+  background: #24272e;
 }
 
 .resultado{
   text-align: center;
-  padding: 70px;
+  padding: 30px;
+  color: #ffffff;
+  font-family: 'Handlee', cursive;
+  font-size: 15px;
 }
 
 .eleccion{
@@ -47,17 +75,20 @@
 
 
 .sidebar-item{
-  background: rgb(238, 237, 237);
-  padding: 15px;
+  background: #24272e;
+  padding: 25px;
   margin-top: 25px;
+  margin-right: 100px;
+  color: #ffffff;
 }
 
 
 
 .sidebar-item h3{
-  font-style: italic;
-  font-size: 17px;
+  font-family: 'Handlee', cursive;
+  font-size: 24px;
   margin: 0px;
+  color: #ffffff;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid #ccc;

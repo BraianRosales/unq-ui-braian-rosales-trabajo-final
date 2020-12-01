@@ -53,30 +53,34 @@ function App() {
 
   return (
     <div className="App">
-      <div className="titulo">
-        {
-          <h1>Piedra, papel, tijera, lagarto, spock</h1>
-        }
-        
+
+      <header>
+        <h1>Piedra, papel, tijera, lagarto, spock</h1>
+      </header>
+
+      <body>
         <div className="comienzo">
           <p>
-            eliga su opcion de juego con un click!
-          </p>
+            eliga su opcion de juego con un click !
+        </p>
         </div>
 
-        <Eleccion jugador={eleccionJugador} maquina={eleccionMaquina}/>
+        <Eleccion jugador={eleccionJugador} maquina={eleccionMaquina} />
 
-      </div>
-      <div className="opciones">
-        {
-          opciones.map((e, index) => <Opcion
-            elegir={elegirOpcion}
-            valor={opciones[index]}
-          />)
-        }
-      </div>
+        <div className="opciones">
+          {
+            opciones.map((e, index) => <Opcion
+              elegir={elegirOpcion}
+              valor={opciones[index]}
+            />)
+          }
+        </div>
+      </body>
 
-      <Resultado jugador={eleccionJugador} maquina={eleccionMaquina} />
+      <div className="resultado">
+        <Resultado jugador={eleccionJugador} maquina={eleccionMaquina} />
+      </div>
+      
     </div>
   );
 }

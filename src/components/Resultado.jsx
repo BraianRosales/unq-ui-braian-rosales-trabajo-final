@@ -16,10 +16,7 @@ const Resultado = (props) => {
         resultadoFinal = <h1>Empate</h1>
     }
     return (
-        <div className="resultado">
-            <h2>{resultadoFinal}</h2>
-        </div>
-        
+            <h2>{resultadoFinal}</h2> 
     )
 }
 
