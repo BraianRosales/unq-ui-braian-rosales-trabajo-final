@@ -4,7 +4,6 @@ const Opcion = (props) => {
 
     return (
         <div className="opcion" onClick={props.elegir}>
-
             {props.valor.eleccion}
         </div>
     );

@@ -1,22 +1,24 @@
 import React from 'react';
 
-const Resultado = (props) => {
+const Resultado = ({jugador, maquina}) => {
 
     let resultadoFinal;
 
-    if ((props.jugador.derrota === props.maquina.eleccion && props.jugador.eleccion ||
-        props.jugador.tambienDerrota === props.maquina.eleccion && props.jugador.eleccion)) {
+    if ((jugador.derrota === maquina.eleccion && jugador.eleccion ||
+        jugador.tambienDerrota === maquina.eleccion && jugador.eleccion)) {
         resultadoFinal = <h1>Ganador : Jugador</h1>
 
-    } else if ((props.maquina.derrota === props.jugador.eleccion && props.jugador.eleccion ||
-        props.maquina.tambienDerrota === props.jugador.eleccion && props.jugador.eleccion)) {
+    } else if ((maquina.derrota === jugador.eleccion && jugador.eleccion ||
+       maquina.tambienDerrota === jugador.eleccion && jugador.eleccion)) {
         resultadoFinal = <h1>Ganador : La Maquina</h1>
 
-    } else if (props.jugador.eleccion === props.maquina.eleccion && props.jugador.eleccion) {
+    } else if (jugador.eleccion === maquina.eleccion && jugador.eleccion) {
         resultadoFinal = <h1>Empate</h1>
     }
     return (
-            <h2>{resultadoFinal}</h2> 
+        <div className="resultado">
+            <h2>{resultadoFinal}</h2>
+        </div>
     )
 }
 
