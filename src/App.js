@@ -4,6 +4,7 @@ import './components/Opcion';
 import './components/Resultado';
 import Eleccion from './components/Eleccion';
 import Opcion from './components/Opcion';
+import Marcador from './components/Marcador';
 import Routes from './Routes';
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
                         eliga su opcion de juego con un click !
                      </p>
                     <p>
-                        piedra, papel, lagarto ...
+                        piedra, papel, tijera, lagarto ...
                     </p>
                 </div>
 
@@ -79,13 +80,10 @@ function App() {
                             valor={opciones[index]}
                         />)
                     }
-
-
                 </div>
+                
+                <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} /> 
 
-                <div className="clearfix"></div>
-                <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} />
-                {/* tratar condiciones para que aumente los marcadores */}
             </body>
 
         </div>

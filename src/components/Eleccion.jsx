@@ -1,7 +1,7 @@
 import React from 'react';
+import Marcador from './Marcador';
 
 export default function Eleccion(props) {
-
     return (
         <aside id="sidebar">
             <div className="sidebar-item">
@@ -14,6 +14,8 @@ export default function Eleccion(props) {
                         <div className="maquina"><h3>Eleccion maquina :  </h3></div>
                         <div className="eleccion">{props.maquina.eleccion}</div>
                     </section>
+
+                    <Marcador />
                 </main>
             </div>
 

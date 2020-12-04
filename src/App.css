@@ -38,7 +38,7 @@
 header{
   text-align: center;
   background: #e47063;
-  padding: 10px;
+  padding: 1px;
   color: #ffffff;
   font-family: 'Yeon Sung', cursive;
   font-size: 18px;
@@ -50,7 +50,6 @@ body{
 
 .resultado{
   text-align: center;
-  padding: 30px;
   color: #ffffff;
   font-family: 'Handlee', cursive;
   font-size: 15px;
@@ -95,7 +94,7 @@ body{
 
 .marcador{
   border: 3px solid #fff;
-  margin: 30px auto;
+  margin-top: 32px;
   width: 200px;
   color: #fff;
   font-size: 40px;
@@ -104,6 +103,7 @@ body{
   text-align: center;
   padding: 70px 80px;
   position: relative;
+  float: right;
 }
 
 .badge{
