@@ -15,7 +15,7 @@ export default function Eleccion(props) {
                         <div className="eleccion">{props.maquina.eleccion}</div>
                     </section>
 
-                    <Marcador />
+                    <Marcador jugador={props.jugador} maquina={props.maquina}/>
                 </main>
             </div>
 

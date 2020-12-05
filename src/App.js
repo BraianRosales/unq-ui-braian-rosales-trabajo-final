@@ -4,15 +4,13 @@ import './components/Opcion';
 import './components/Resultado';
 import Eleccion from './components/Eleccion';
 import Opcion from './components/Opcion';
-import Marcador from './components/Marcador';
 import Routes from './Routes';
 
 function App() {
 
     const [eleccionJugador, setEleccionJugador] = useState({});
     const [eleccionMaquina, setEleccionMaquina] = useState({});
-    const [contadorUser, setContadorUser] = useState(0);
-    const [contadorPc, setContadorPc] = useState(0);
+    
 
     const opciones = [
         {
@@ -64,11 +62,10 @@ function App() {
             <body>
                 <div className="comienzo">
                     <p>
-                        eliga su opcion de juego con un click !
-                     </p>
-                    <p>
-                        piedra, papel, tijera, lagarto ...
+                        elija su opcion de juego con un click !
+                        <h3>a jugar!</h3>
                     </p>
+
                 </div>
 
                 <Eleccion jugador={eleccionJugador} maquina={eleccionMaquina} />
@@ -81,14 +78,11 @@ function App() {
                         />)
                     }
                 </div>
-                
-                <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} /> 
 
+                 <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} /> 
             </body>
-
         </div>
     );
 }
 
 export default App;
-

@@ -4,15 +4,15 @@
 
 .opciones{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 27%;
   justify-items: center;
   padding: 30px;
-  
+  row-gap: 30px;
 }
 
 .comienzo{
   font-size : 22px;
-  padding: 25px;
+  padding: 1px;
   text-align: center;
   font-family: 'Handlee', cursive;
   font-size: 28px;
@@ -20,13 +20,10 @@
 }
 
 .opcion{
-  font-size : 35px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: 1px solid black;
+  font-size : 38px;
   border-radius: 100%;
-  padding: 70px;
+  padding: 85px;
   cursor: pointer;
-  margin: 25px;
   color: #24272e;
   background: #e47063;
 }
@@ -74,7 +71,6 @@ body{
 .sidebar-item{
   background: #24272e;
   padding: 25px;
-  margin-top: 25px;
   margin-right: 100px;
   color: #ffffff;
 }
