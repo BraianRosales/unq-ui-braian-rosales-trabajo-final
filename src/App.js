@@ -10,7 +10,7 @@ function App() {
 
     const [eleccionJugador, setEleccionJugador] = useState({});
     const [eleccionMaquina, setEleccionMaquina] = useState({});
-    
+
 
     const opciones = [
         {
@@ -51,6 +51,7 @@ function App() {
         setEleccionMaquina(eleccion);
     }
 
+    
 
     return (
         <div className="App">
@@ -79,7 +80,8 @@ function App() {
                     }
                 </div>
 
-                 <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} /> 
+                <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} />
+
             </body>
         </div>
     );

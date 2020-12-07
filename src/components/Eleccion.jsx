@@ -1,6 +1,10 @@
 import React from 'react';
 import Marcador from './Marcador';
 
+const refreshPage = () => {
+    window.location.reload(false);
+}
+
 export default function Eleccion(props) {
     return (
         <aside id="sidebar">
@@ -16,6 +20,9 @@ export default function Eleccion(props) {
                     </section>
 
                     <Marcador jugador={props.jugador} maquina={props.maquina}/>
+
+                    <button className="refresh" onClick={refreshPage}>Volver a empezar!</button>
+                    
                 </main>
             </div>
 
