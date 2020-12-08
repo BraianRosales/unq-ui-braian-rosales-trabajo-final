@@ -18,14 +18,10 @@ export default function Eleccion(props) {
                         <div className="maquina"><h3>Eleccion maquina :  </h3></div>
                         <div className="eleccion">{props.maquina.eleccion}</div>
                     </section>
-
                     <Marcador jugador={props.jugador} maquina={props.maquina}/>
-
-                    <button className="refresh" onClick={refreshPage}>Volver a empezar!</button>
-                    
+                    <button className="refresh" onClick={refreshPage}>Volver a empezar!</button>        
                 </main>
             </div>
-
         </aside>
     );
 }

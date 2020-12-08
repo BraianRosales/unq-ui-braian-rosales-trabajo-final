@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 
 let scoreUsuario = 0;
 let scorePc = 0;
@@ -15,7 +14,6 @@ export default function Marcador({ jugador, maquina }) {
     }
 
     return (
-
         <div className="marcador">
             <div className="user-label badge"> user</div>
             <div className="comp-label badge"> PC </div>

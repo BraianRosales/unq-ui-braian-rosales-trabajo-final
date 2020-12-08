@@ -11,7 +11,6 @@ function App() {
     const [eleccionJugador, setEleccionJugador] = useState({});
     const [eleccionMaquina, setEleccionMaquina] = useState({});
 
-
     const opciones = [
         {
             eleccion: "piedra",
@@ -51,26 +50,19 @@ function App() {
         setEleccionMaquina(eleccion);
     }
 
-    
-
     return (
         <div className="App">
-
             <header>
                 <h1>Piedra, papel, tijera, lagarto, spock</h1>
             </header>
-
             <body>
                 <div className="comienzo">
                     <p>
                         elija su opcion de juego con un click !
                         <h3>a jugar!</h3>
                     </p>
-
                 </div>
-
-                <Eleccion jugador={eleccionJugador} maquina={eleccionMaquina} />
-
+                    <Eleccion jugador={eleccionJugador} maquina={eleccionMaquina} />
                 <div className="opciones">
                     {
                         opciones.map((e, index) => <Opcion
@@ -79,12 +71,10 @@ function App() {
                         />)
                     }
                 </div>
-
+                {/* trae el resultado por medio de router. */}
                 <Routes eleccionJugador={eleccionJugador} eleccionMaquina={eleccionMaquina} />
-
             </body>
         </div>
     );
 }
-
 export default App;
